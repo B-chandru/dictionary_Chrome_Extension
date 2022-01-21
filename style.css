@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui,sans-serif;
+    text-align: left;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+
+/* header part */
+.header{
+    color: #ffffff;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(
+        45deg, #dd259cd1, #ff8a656b) ,url("./imageS/bg2-min.jpg"); 
+    background-size: cover; 
+    display: grid;
+    place-items: center;
+}
+form{
+    margin-top: -29px;
+}
+input[type="text"]{
+    border: none;
+    outline: none;
+    width: 400px;
+    padding-left: 40px;
+    font-size: 1rem;
+    height: 35px;
+    border-radius: 17px;
+}
+label{
+position: relative;
+}
+#search_sym{
+    position: absolute;
+    color: rgb(192, 192, 192);
+    left: 10px;
+    top: 0px;
+}
+.fa-search{
+
+    font-size: 1.3rem;
+}
+
+.sm{
+    font-weight: 400;
+   
+}
+h3{
+    margin-bottom: 11px;
+    margin-top: 8px;
+}
+h4{
+    font-size: 23px;
+    padding-bottom: 24px;
+}
+.sm1{
+    font-weight: 600;
+    word-break: break-all;
+    line-height: 1.4rem;
+    font-size: 15px;
+}
+.sm2{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* content part */
+
+.content {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+}
+#wrapper{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#wrapper_origin{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-row: 200px;
+}
+#wrap{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    max-height: 250px;
+    overflow: auto; 
+}
+#wrapper_sound{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+img{
+    width: 230px;
+}
+#error_div{
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+}
+
+
+/*  responsive design */
+@media only screen and (max-width: 650px) {
+    #wrapper_origin{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    audio{
+        width: 201px;
+    }
+    input[type="text"] {
+        width: 261px;
+    }
+}

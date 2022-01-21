@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2 ,
+    "name":"Dictationary",
+    "version":"1.0",
+    "description":"used to find the meaning,synonyms,antonyms and origin of the word that your searching",
+    "icons":{
+        "128":"images/logo128.png",
+        "48":"images/logo48.png",
+        "16":"images/logo16.png"
+    },
+    "browser_action":{
+        "default_icon":{
+            "128":"images/logo128.png",
+            "48":"images/logo48.png",
+            "16":"images/logo16.png"
+        },
+        "default_popup":"index.html",
+        "default_title":"Dictationary"
+    },
+    "permissions": [
+        "activeTab"
+      ],
+    "content_scripts":[
+        {"matches":["<all_urls>"],
+            "js":["design.js"]}
+    ]
+    }
